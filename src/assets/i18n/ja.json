@@ -1,0 +1,80 @@
+{
+    "COMMON": {
+        "HOME": "家"
+    },
+    "HEADER": {
+        "TITLE": "あなたの店",
+        "WELCOME": "ようこそ",
+        "LOGIN": "ログインする",
+        "LOGOUT": "ログアウト"
+    },
+    "FOOTER": {
+        "TITLE": "著作権 © 2021, 無断複写・転載を禁じます",
+        "TERMS": "条項",
+        "PRIVACY": "個人情報保護方針",
+        "CONTACT": "お問い合わせ"
+    },
+    "LOGIN": {
+        "TEXT": "サインイン",
+        "EMAIL": {
+            "TEXT": "Eメール",
+            "REQUIRED": "メールが必要です",
+            "VALID": "メールは有効なメールアドレスである必要があります"
+        },
+        "PASSWORD": {
+            "TEXT": "パスワード",
+            "REQUIRED": "パスワードが必要です",
+            "VALID": "パスワードは8文字以上である必要があります"
+        }
+    },
+    "CART": {
+        "TEXT": "カート",
+        "EMPTYTEXT": "あなたのカートは空です",
+        "SHOPPING": "ここをクリックして買い物をする",
+        "CHECKOUT": "チェックアウト",
+        "TOTAL": "カート合計",
+        "ENTRY": {
+            "ID": "製品番号",
+            "PRICE": "価格",
+            "QUANTITY": "量",
+            "REMOVE": "削除する",
+            "TOTAL.PRICE": "合計金額"
+        }
+    },
+    "CHECKOUT": {
+        "HEADING": "配送先住所を入力してください",
+        "FORM": {
+            "ADDRESS1": {
+                "TEXT": "住所",
+                "REQUIRED": "アドレスが必要です"
+            },
+            "ADDRESS2": "住所2",
+            "CITY": {
+                "TEXT": "市",
+                "REQUIRED": "都市が必要です"
+            },
+            "STATE": {
+                "TEXT": "状態",
+                "REQUIRED": "状態が必要です"
+            },
+            "ZIP": {
+                "TEXT": "郵便番号",
+                "REQUIRED": "郵便番号が必要です"
+            },
+            "PLACEORDER": "注文する"
+        }
+    },
+    "PDP": {
+        "TITLE": "製品",
+        "STOCK": "在庫量",
+        "ADDTOCARTTEXT": "カートに追加",
+        "OUTOFSTOCK": "在庫切れ"
+    },
+    "PLP": {
+        "VIEW": "製品を見る",
+        "SEARCH": "探す",
+        "CATEGORY": "カテゴリー",
+        "NOPRODUCTS": "製品が見つかりません。",
+        "NOPRODUCTSHELP": "名前またはカテゴリで検索してみてください"
+    }
+}

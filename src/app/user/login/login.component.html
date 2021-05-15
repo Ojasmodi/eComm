@@ -1,0 +1,35 @@
+<app-breadcrumb [breadcrumbs]="breadcrumbs"></app-breadcrumb>
+<form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+    <div class="row p-0 m-2 mt-4">
+        <div class="col-sm-5">
+            <img class="img-responsive" src="./../../../assets/login.png" height="80%" width="150%" />
+        </div>
+        <div class="col-sm-4 p-4 border mat-elevation-z8">
+            <h2 class="form-signin-heading">{{ 'LOGIN.TEXT' | translate}}</h2>
+            <br>
+            <span class="text-info font-weight-bold">{{ 'LOGIN.EMAIL.TEXT' | translate}}: </span>
+            <label for="inputEmail" class="sr-only">{{ 'LOGIN.EMAIL.TEXT' | translate}}</label>
+            <input type="email" class="input-group input-sm mb-3" class="form-control" formControlName="email" placeholder="Email address">
+            <div *ngIf="f.email.errors && (f.email.dirty || f.email.touched)" class="text-danger">
+                <div *ngIf="f.email.errors.required">{{ 'LOGIN.EMAIL.REQUIRED' | translate}}</div>
+                <div *ngIf="f.email.errors.email">{{ 'LOGIN.EMAIL.VALID' | translate}}</div>
+            </div>
+            <br>
+            <span class="text-info font-weight-bold">{{ 'LOGIN.PASSWORD.TEXT' | translate}}: </span>
+            <label for="inputPassword" class="sr-only">{{ 'LOGIN.PASSWORD.TEXT' | translate}}</label>
+            <input type="password" class="input-group input-sm mb-3" class="form-control" formControlName="password" placeholder="Password">
+            <div *ngIf="f.password.errors && (f.password.dirty || f.password.touched)" class="text-danger">
+                <div *ngIf="f.password.errors.required">{{ 'LOGIN.PASSWORD.REQUIRED' | translate}}</div>
+                <div *ngIf="f.password.errors.minlength">{{ 'LOGIN.PASSWORD.VALID' | translate}}</div>
+            </div>
+            <br>
+            <div class="form-group">
+                <button [disabled]="!signUpForm.valid" type="submit" class="btn btn-md mat-elevation-z8 btn-success">{{
+                    'LOGIN.TEXT' | translate}}</button>
+            </div>
+
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+</form>
+<ngx-spinner></ngx-spinner>

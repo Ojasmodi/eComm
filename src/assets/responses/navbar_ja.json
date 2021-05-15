@@ -1,0 +1,63 @@
+[{
+        "id": "personalCare",
+        "name": "パーソナルケア",
+        "parent": "root",
+        "children": [],
+        "showChildren": false
+    },
+    {
+        "id": "pantry",
+        "name": "パントリー",
+        "children": [{
+            "id": "chocolates",
+            "name": "チョコレート",
+            "parent": "pantry"
+        }, {
+            "id": "bfc",
+            "name": "朝食用シリアル",
+            "parent": "pantry"
+        }, {
+            "id": "sss",
+            "name": "ソース-スプレッド-調味料",
+            "parent": "pantry"
+        }],
+        "showChildren": false
+    }, {
+        "id": "lqdr",
+        "name": "お酒",
+        "parent": "root",
+        "children": [{
+                "id": "whiskey",
+                "name": "ウィスキー",
+                "parent": "lqr"
+            },
+            {
+                "id": "vodka",
+                "name": "ウォッカ",
+                "parent": "lqr"
+            }
+        ],
+        "showChildren": false
+    },
+    {
+        "id": "dairy",
+        "name": "乳製品",
+        "parent": "root",
+        "children": [],
+        "showChildren": false
+    }, {
+        "id": "essentials",
+        "name": "必需品",
+        "parent": "root",
+        "children": [{
+            "id": "bc",
+            "name": "赤ちゃんのケア",
+            "parent": "essentials"
+        }, {
+            "id": "pc",
+            "name": "ペットケア",
+            "parent": "essentials"
+        }],
+        "showChildren": false
+    }
+]

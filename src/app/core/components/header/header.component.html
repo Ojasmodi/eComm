@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-dark text-white text-capitalize sticky-top mat-elevation-z8" style="padding-left: 3rem">
+    <a class="navbar-brand" routerLink="/" style="display: contents;">
+        <img src="./../../../assets/YSign.jfif" width="30" height="30" class="d-inline-block align-top" alt="Yourmart">
+        <span style="padding-left: 6px;">{{ 'HEADER.TITLE' | translate}}</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+            </li>
+        </ul>
+        <span class="lang-selector">
+            <select #langSelect (change)="updateSessionLanguage(langSelect.value)" [(ngModel)]="currentLang"
+                class="dark-element pointer border-none ">
+                <option *ngFor="let lang of languages" [value]="lang.isoCode">
+                    {{lang.name}}</option>
+            </select>
+        </span>
+        <span *ngIf="isUserLoggedIn;else other_content" class="dropdown">
+            <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                {{ 'HEADER.WELCOME' | translate|titlecase}} {{user.userName|titlecase}}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="nav-link" (click)="logout()"> {{ 'HEADER.LOGOUT' | translate|titlecase}}</a>
+            </div>
+        </span>
+        <ng-template #other_content>
+            <span class="form-inline my-2 my-lg-0">
+                <a class="nav-link" routerLink='/login'>{{ 'HEADER.LOGIN' | translate|titlecase}}</a>
+            </span>
+        </ng-template>
+        <app-mini-cart></app-mini-cart>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-lg text-white cat-bar mat-elevation-z8" *ngIf="navbarData">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="items">
+                <span class="nav-item" *ngFor="let category of navbarData">
+                    <a (mouseover)="showSubcategories(category.id)" (mouseout)="hideSubCategories(category.id)"
+                        class="nav-link" [routerLink]="['/product/search/cat/',category.id]">{{category.name}}</a>
+                    <div *ngIf="category.children.length>0 && category.showChildren" class="sub-cat-header">
+                        <div class="child-category" *ngFor="let subCat of category.children"
+                            (mouseover)="showSubcategories(category.id)" (mouseout)="hideSubCategories(category.id)">
+                            <a [routerLink]="['/product/search/cat/',category.id]">{{subCat.name}}</a>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</nav>

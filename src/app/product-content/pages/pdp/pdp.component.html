@@ -1,0 +1,32 @@
+<app-breadcrumb [breadcrumbs]="breadcrumbs"></app-breadcrumb>
+<div class="row go-back">
+    <div (click)="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+</div>
+<div class="row m-4" *ngIf="product">
+    <div class="col-sm-1 col-lg-1"></div>
+    <div class="col-xs-10">
+        <img class="img-responsive" [src]="'./../../../assets/'+product.image" alt="Smiley face" height="400px">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-7 col-lg-4 mat-elevation-z8">
+        <div class="card-body">
+            <span class="card-title">{{product.name}}</span>
+            <div class="price">{{product.price}}$</div>
+            <div class="card-text brand">{{product.brand|titlecase}}</div>
+            <div class="desc">{{product.description}}</div>
+            <div class="stock-level">{{ 'PDP.STOCK' | translate}}:{{product.stock}}</div>
+            <div *ngIf="product.stockStatus;else other_content" class="add-to-cart">
+                <div class="status">{{product.stockStatus}}</div>
+                <div (click)="addToCart()" class="btn btn-info btn-block mat-elevation-z8"><span class="text">{{
+                        'PDP.ADDTOCARTTEXT' | translate}}</span><span class="cart-icon"><i
+                            class="fa fa-shopping-cart"></i></span></div>
+            </div>
+            <ng-template #other_content>
+                <div class="btn btn-danger btn-block mat-elevation-z8 disabled">
+                    {{ 'PDP.OUTOFSTOCK' | translate}}
+                </div>
+            </ng-template>
+
+        </div>
+    </div>
+</div>
