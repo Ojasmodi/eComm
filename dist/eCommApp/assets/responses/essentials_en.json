@@ -1,0 +1,103 @@
+[{
+        "id": "5",
+        "name": "Product5",
+        "brand": "brandT",
+        "category": ["personalcare", "pantry"],
+        "stock": 234,
+        "description": "Product5 description",
+        "stockStatus": "inStock",
+        "price": 355,
+        "image": "p.jpg"
+    }, {
+        "id": "6",
+        "name": "Product6",
+        "brand": "brandX",
+        "category": ["essentials", "pantry", "lqdr"],
+        "stock": 565,
+        "description": "Product6 description",
+        "stockStatus": "inStock",
+        "price": 120,
+        "image": "p.jpg"
+    }, {
+        "id": "7",
+        "name": "Product7",
+        "brand": "brandY",
+        "category": ["essentials", "pantry", "lqdr"],
+        "stock": 500,
+        "description": "Product7 description",
+        "stockStatus": "inStock",
+        "price": 450,
+        "image": "p.jpg"
+    }, {
+        "id": "8",
+        "name": "Product8",
+        "brand": "brandT",
+        "category": ["essentials", "pantry", "lqdr"],
+        "stock": 560,
+        "description": "Product8 description",
+        "stockStatus": "inStock",
+        "price": 260,
+        "image": "p.jpg"
+    }, {
+        "id": "9",
+        "name": "Product9",
+        "brand": "brandZ",
+        "category": ["essentials", "pantry", "lqdr"],
+        "stock": 360,
+        "description": "Product9 description",
+        "stockStatus": "inStock",
+        "price": 140,
+        "image": "p.jpg"
+    }, {
+        "id": "10",
+        "name": "Product10",
+        "brand": "brandX",
+        "category": ["essentials", "pantry", "lqdr"],
+        "stock": 800,
+        "description": "Product10 description",
+        "stockStatus": "inStock",
+        "price": 780,
+        "image": "p.jpg"
+    }, {
+        "id": "11",
+        "name": "Product11",
+        "brand": "brandW",
+        "description": "Product11 description",
+        "stock": 100,
+        "category": ["essentials", "dairy", "lqdr"],
+        "stockStatus": "inStock",
+        "price": 100,
+        "image": "p.jpg"
+    }, {
+        "id": "12",
+        "name": "Product12",
+        "brand": "brandA",
+        "description": "Product12 description",
+        "stock": 124,
+        "category": ["essentials", "dairy", "lqdr"],
+        "stockStatus": "inStock",
+        "price": 555,
+        "image": "p.jpg"
+    },
+    {
+        "id": "13",
+        "name": "Product13",
+        "brand": "brandX",
+        "description": "Product13 description",
+        "stock": 0,
+        "category": ["essentials", "dairy", "lqdr"],
+        "stockStatus": "outOfStock",
+        "price": 600,
+        "image": "p.jpg"
+    }, {
+        "id": "14",
+        "name": "Product14",
+        "brand": "brandW",
+        "description": "Product14 description",
+        "stock": 0,
+        "category": ["essentials", "dairy", "lqdr"],
+        "stockStatus": "outOfStock",
+        "price": 500,
+        "image": "p.jpg"
+    }
+]

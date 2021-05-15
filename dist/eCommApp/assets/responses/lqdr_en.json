@@ -1,0 +1,31 @@
+[{
+    "id": "13",
+    "name": "Product13",
+    "brand": "brandX",
+    "description": "Product13 description",
+    "stock": 0,
+    "category": ["essentials", "dairy", "lqdr"],
+    "stockStatus": "outOfStock",
+    "price": 600,
+    "image": "p.jpg"
+}, {
+    "id": "14",
+    "name": "Product14",
+    "brand": "brandW",
+    "description": "Product14 description",
+    "stock": 0,
+    "category": ["essentials", "dairy", "lqdr"],
+    "stockStatus": "outOfStock",
+    "price": 500,
+    "image": "p.jpg"
+}, {
+    "id": "15",
+    "name": "Product15",
+    "brand": "brandR",
+    "description": "Product15 description",
+    "stock": 0,
+    "category": ["essentials", "dairy", "lqdr"],
+    "stockStatus": "outOfStock",
+    "price": 400,
+    "image": "p.jpg"
+}]

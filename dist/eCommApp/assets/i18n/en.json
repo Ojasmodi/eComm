@@ -1,0 +1,80 @@
+{
+    "COMMON": {
+        "HOME": "home"
+    },
+    "HEADER": {
+        "TITLE": "YourStore",
+        "WELCOME": "welcome",
+        "LOGIN": "login",
+        "LOGOUT": "logout"
+    },
+    "FOOTER": {
+        "TITLE": "Copyright © 2021, All Right Reserved",
+        "TERMS": "Terms",
+        "PRIVACY": "Privacy Policy",
+        "CONTACT": "Contact Us"
+    },
+    "LOGIN": {
+        "TEXT": "Sign In",
+        "EMAIL": {
+            "TEXT": "Email",
+            "REQUIRED": "Email is required",
+            "VALID": "Email must be a valid email address"
+        },
+        "PASSWORD": {
+            "TEXT": "Password",
+            "REQUIRED": "Password is required",
+            "VALID": "Password must be atleast 8 characters long"
+        }
+    },
+    "CART": {
+        "TEXT": "Cart",
+        "EMPTYTEXT": "Your cart is Empty",
+        "SHOPPING": "Click here to shopping",
+        "CHECKOUT": "Checkout",
+        "TOTAL": "Cart Total",
+        "ENTRY": {
+            "ID": "Product-Id",
+            "PRICE": "Price",
+            "QUANTITY": "Quantity",
+            "REMOVE": "Remove",
+            "TOTAL.PRICE": "Total Price"
+        }
+    },
+    "CHECKOUT": {
+        "HEADING": "Enter delivery address",
+        "FORM": {
+            "ADDRESS1": {
+                "TEXT": "Address",
+                "REQUIRED": "Address is required"
+            },
+            "ADDRESS2": "Address2",
+            "CITY": {
+                "TEXT": "City",
+                "REQUIRED": "City is required"
+            },
+            "STATE": {
+                "TEXT": "State",
+                "REQUIRED": "State is required"
+            },
+            "ZIP": {
+                "TEXT": "Zip-code",
+                "REQUIRED": "Zip-code is required"
+            },
+            "PLACEORDER": "Place order"
+        }
+    },
+    "PDP": {
+        "TITLE": "Product",
+        "STOCK": "Stock-level",
+        "ADDTOCARTTEXT": "Add to cart",
+        "OUTOFSTOCK": " Out of stock"
+    },
+    "PLP": {
+        "VIEW": "View Product",
+        "SEARCH": "Search",
+        "CATEGORY": "Category",
+        "NOPRODUCTS": "No products found.",
+        "NOPRODUCTSHELP": "Please try searching by name or category"
+    }
+}

@@ -1,0 +1,54 @@
+[{
+        "id": "personalCare",
+        "name": "Personal Care",
+        "parent": "root"
+    },
+    {
+        "id": "lqdr",
+        "name": "Liquor",
+        "parent": "root"
+    }, {
+        "id": "pantry",
+        "name": "Pantry",
+        "parent": "root"
+    },
+    {
+        "id": "dairy",
+        "name": "Dairy",
+        "parent": "root"
+    }, {
+        "id": "essentials",
+        "name": "Essentials",
+        "parent": "root"
+    }, {
+        "id": "bc",
+        "name": "Baby Care",
+        "parent": "essentials"
+    }, {
+        "id": "pc",
+        "name": "Pet Care",
+        "parent": "essentials"
+    },
+    {
+        "id": "chocolates",
+        "name": "Chocolates",
+        "parent": "pantry"
+    }, {
+        "id": "bfc",
+        "name": "Breakfast cereals",
+        "parent": "pantry"
+    }, {
+        "id": "sss",
+        "name": "Sauces-Spreads-Seasoning",
+        "parent": "pantry"
+    }, {
+        "id": "whiskey",
+        "name": "Whiskey",
+        "parent": "lqr"
+    },
+    {
+        "id": "vodka",
+        "name": "Vodka",
+        "parent": "lqr"
+    }
+]
